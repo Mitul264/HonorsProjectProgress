@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+
+
+</head>
+
+<body>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'><strong>COMP 4520 &ndash; Undergraduate Honours Project Proposal</strong></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'><strong>Finding a Machine Learning Model that Best Predicts Canola Traits.</strong></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'>Student: Mitul Patel (7851781)</p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'><span style="line-height:107%;color:#222222;">Supervisor: Dr Michael Domaratzki (Mike)</span></p>
+  <p style='margin-top:0cm;margin-right:124.75pt;margin-bottom:.1pt;margin-left:-.75pt;line-height:185%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-size:16px;line-height:185%;font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+  <p style='margin-top:0cm;margin-right:124.75pt;margin-bottom:.1pt;margin-left:0cm;line-height:185%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ol style="margin-bottom:0cm;list-style-type: lower-roman;margin-left:2.3499999999999996px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style="line-height:110%;font-size:16px;">Abstract:</span></u></strong><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp;&nbsp;</span></li>
+      </ol>
+  </div>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:23.55pt;margin-left:12.35pt;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span style='font-family:"Times New Roman",serif;'>This project explores building various Machine Learning Models using a dataset from the Bioinformatics Lab at the University of Manitoba and algorithms from the skikit-learn library to find which Machine Learning model best predicts Canola Crop Traits. These traits include flowering time, maturity time, height, yield, protein content, oil content and glucose content.&nbsp;</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:2.3499999999999996px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style="line-height:110%;font-size:16px;">Introduction to the topic:</span></u></strong><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></li>
+      </ol>
+  </div>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:23.55pt;margin-left:12.35pt;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span style='font-family:"Times New Roman",serif;'>Canola is proudly grown in Canada and is now used as a source of oil. At the Faculty of Agriculture, University of Manitoba, Scientists have planted about 460 Canola seeds each with a different Genetic Sequence. They then recorded the Genetic Sequence of each seed and its corresponding traits. We will use this recorded data to build Machine learning models and find the best Model that will in turn be used to predict Canola crop traits. As a result, researchers can breed new varieties of Canola and easily predict and understand their traits without having to plant them. Furthermore, using these predictions, scientists can quickly find the Genetic Sequence that gives the most favourable traits and thus those seeds can be used by Canola farmers to maximize their revenue.&nbsp;</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:2.3499999999999996px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style="line-height:110%;font-size:16px;">Your background preparation to do this project:</span></u></strong><strong><span style="font-size:16px;">&nbsp; &nbsp;</span></strong></li>
+      </ol>
+  </div>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;margin-left:12.35pt;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span style='font-family:"Times New Roman",serif;'>I have prepared for this project in the following ways</span></p>
+  <ul style="list-style-type: disc;margin-left:20.35px;">
+      <li><span style='font-family:"Times New Roman",serif;'>I learned the programming language Python from the COMP 1012 course.</span></li>
+      <li><span style='font-family:"Times New Roman",serif;'>I also have a high overview of how some supervised machine learning algorithms work e.g. Random Forest and Linear Regression. I came across them and used them on my research paper (Assignment 4) in COMP 3190.</span></li>
+      <li><span style='font-family:"Times New Roman",serif;'>I also have a general overview of some other supervised algorithms e.g. Decision Trees and Logistic Regression as it was part of the AWS Machine Learning Certification Course on Linux Academy that I have taken recently.</span></li>
+  </ul>
+  <ol style="list-style-type: undefined;margin-left:2.3499999999999996px;">
+      <li><strong><u><span style="line-height:110%;font-size:16px;">Related work: &nbsp;</span></u></strong><span style="line-height:110%;font-size:16px;">&nbsp; &nbsp;&nbsp;</span></li>
+  </ol>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;margin-left:12.35pt;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>There are similar projects undertaken at the University of Manitoba Bioinformatics Lab, specifically, the published journal <em>Sparse Bayesian Learning for Predicting Phenotypes and Ranking Influential Markers in Yeast</em>. It aims at predicting the yield and drought resistance in crops while doing Genomic Selection.</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:2.3499999999999996px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style="line-height:110%;font-size:16px;">Problem Statement:&nbsp;</span></u></strong></li>
+      </ol>
+  </div>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;margin-left:12.35pt;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span style='font-family:"Times New Roman",serif;'>For all the different Genetic Sequences for Canola Seeds, it&rsquo;s expensive, and time consuming to plant and grow each one in order to know the resulting Crop Trait. An accurate Machine Learning Model would help eliminate seeds with a Genetic Sequence whose predicted Crop Traits are extremely unfavourable thus scientists will not need to plant those and instead plant and test seeds whose predictions give favourable Crop Traits. In addition, different Machine Learning Models work in a different way and must build and test various models to find the best one.</span><strong><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></strong><span style='font-family:"Times New Roman",serif;'>&nbsp;&nbsp;</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:2.3499999999999996px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style="line-height:112%;font-size:16px;">Methodology:</span></u></strong><span style="line-height:112%;font-size:16px;">&nbsp;<strong>&nbsp;&nbsp;</strong></span></li>
+      </ol>
+  </div>
+  <table style="width:467.55pt;border-collapse:collapse;border:none;margin-left:50px">
+      <tbody>
+          <tr>
+              <td style="width: 332.9pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'><span style="color:#4472C4;font-weight:bold;">Tasks to be completed</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'><span style="color:#4472C4;font-weight:bold;">&nbsp;</span></p>
+              </td>
+              <td style="width: 134.65pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'><span style="color:#4472C4;font-weight:bold;">Due By</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:center;'><span style="color:#4472C4;font-weight:bold;">&nbsp;</span></p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 332.9pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>SVM</span></strong></p>
+                  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                      <ul style="margin-bottom:0cm;list-style-type: disc;">
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Process Data</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Train</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Test</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Build a Confusion Matrix, Find F1, Improve and Infer.</span></li>
+                      </ul>
+                  </div>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></strong></p>
+              </td>
+              <td style="width: 134.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>June 15<sup>th</sup>&nbsp;</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 332.9pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>Decision Trees</span></strong></p>
+                  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                      <ul style="margin-bottom:0cm;list-style-type: disc;">
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Train</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Test</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Build a Confusion Matrix, Find F1, Improve and Infer.</span></li>
+                      </ul>
+                  </div>
+              </td>
+              <td style="width: 134.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>July 2<sup>nd</sup>&nbsp; &nbsp; &nbsp;</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 332.9pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>Random Forest Model&nbsp;</span></strong></p>
+                  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                      <ul style="margin-bottom:0cm;list-style-type: disc;">
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Train</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Test</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Build a Confusion Matrix, Find F1, Improve and Infer.</span></li>
+                      </ul>
+                  </div>
+              </td>
+              <td style="width: 134.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>July 23<sup>rd</sup>&nbsp; &nbsp;</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 332.9pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>Logistic Regression</span></strong></p>
+                  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+                      <ul style="margin-bottom:0cm;list-style-type: disc;">
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Train</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Test</span></li>
+                          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>Build a Confusion Matrix, Find F1, Improve and Infer.</span></li>
+                      </ul>
+                  </div>
+              </td>
+              <td style="width: 134.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>August 13<sup>th</sup> &nbsp;</span></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></strong></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></strong></p>
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></strong></p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 332.9pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>Presentation and Report</span></strong></p>
+              </td>
+              <td style="width: 134.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 14.5pt;vertical-align: bottom;">
+                  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:  normal;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>August 17th - August 21st &nbsp; &nbsp;&nbsp;</span></p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.45pt;margin-left:0cm;line-height:112%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:2.3499999999999996px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style="line-height:113%;font-size:16px;">Infrastructure and facilities and expert personnel required:</span></u></strong><strong><span style='line-height:113%;font-family:"Times New Roman",serif;'>&nbsp;</span></strong></li>
+      </ol>
+  </div>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.35pt;margin-left:12.35pt;line-height:113%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><span style='font-family:"Times New Roman",serif;'>I will be working directly with my supervisor&nbsp;</span><span style="line-height:113%;color:#222222;">Dr Michael Domaratzki (Mike) as I appreciate his expertise in Bioinformatics and will seek guidance where necessary. We will arrange Skype meetings and communicate remotely.</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:2.3499999999999996px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style="line-height:110%;font-size:16px;">Outcome and Deliverables:</span></u></strong><strong><span style="line-height:110%;font-size:16px;">&nbsp;</span></strong></li>
+      </ol>
+  </div>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;margin-left:0cm;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-align:justify;text-indent:12.35pt;'><span style='font-family:"Times New Roman",serif;'>I am expected to deliver:</span></p>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:38.35px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>Dr Michael Domaratzki (Mike):&nbsp;</span></strong><span style='font-family:"Times New Roman",serif;'>Weekly meetings, a Final Paper and a Presentation discussing what was accomplished for the Honors Project.&nbsp;</span></li>
+      </ul>
+  </div>
+  <div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'>
+      <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:38.35px;">
+          <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><span style='font-family:"Times New Roman",serif;'>Dr Ruppa Thulasiram (Tulsi):</span></strong><span style='font-family:"Times New Roman",serif;'>&nbsp;A proposal document at the start of the project, bi-weekly check-ins on the progress of the project, a Final Paper and a Presentation discussing what was accomplished for the Honors Project.&nbsp;</span></li>
+      </ul>
+  </div>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;margin-left:0cm;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><strong><u><span style='font-size:16px;line-height:110%;font-family:"Times New Roman",serif;'>References:</span></u></strong><strong><span style='font-size:16px;line-height:110%;font-family:"Times New Roman",serif;'>&nbsp;</span></strong></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;margin-left:0cm;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;'><em><span style='font-family:"Times New Roman",serif;'>Ayat, Maryam &amp; Domaratzki, Michael. (2018). Sparse Bayesian learning for predicting phenotypes and ranking influential markers in yeast. 10.1101/489245.</span></em></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:214.3pt;margin-left:-.25pt;line-height:110%;font-size:15px;font-family:"Calibri",sans-serif;color:black;text-indent:-.5pt;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+</body>
