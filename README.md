@@ -1,3 +1,4 @@
 # HonorsProjectProgress
 
-Use  https://mitul264.github.io/HonorsProjectProgress/ to visit the progress
+Use  https://mitul264.github.io/HonorsProjectProgress/ to visit the progress page
+ 
