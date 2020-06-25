@@ -105,6 +105,28 @@
             </tr>
             
             <tr>
+              <td>
+                <p>We ran Models with One Hot Encoding and without One Hot Encoding. There appears to be a noticeable differnce and I am working on re-running it several times
+                to get a little more confidence that exploring the one hot encoding part is the right way to go. I will try to run the model as many times as I can, usually takes about 8 hours for a model to train and sometimes it crashes. By next week I will send any results that I receive.</p>
+                  
+                <p>In addition to that, I and Mike decided to build a mini program that helps map features from One hot encoding to 
+                actual original genomes</p>
+
+                <ul>
+                <li>Make a program that verifies that there is at least one -1, 0, 1 in each column of the dataset.</li> 
+                <li>If not all columns in the dataset have at least one -1, 0, 1, then I will modify the program to ensure that it manually produces a CSV file that contains headers (gene-identifier) in every column and 
+                  the rows underneath each header will have the actual column number that would be produced after one hot encoding. This means that once we have the column numbers of the most influential markers, we can easyly use this
+                  CSV file that my program produces to look up the genetic marker for that column.
+                  </li>
+                  <li>We will then run models on Yield and find the most influential markers. We will also look for overlappings over different runs.</li>
+                </ul>
+                <p>Please note: Due to a single taking about 8 hours to run, the above plan will take weeks to accomplish</p>
+                
+              </td>
+              <td><p > 2 (June 25th)</p></td>
+            </tr>
+            
+            <tr>
               <td><p style="color:red" >Comming Soon!</p></td>
               <td><p style="color:red" >Comming Soon!</p></td>
             </tr>
