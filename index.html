@@ -155,6 +155,15 @@
             </tr>
             
              <tr>
+              <td><p>I can confirm our suspcions. It was feature selection that was bring about the weird behaviour. I decided to change the number of features to 20000 instead of 2000 and do about
+                100 runs on the model. The results for Yield now include chromosomes 1-9. I belive if I decide to do the same for about 40000 features, we might increase coverage with chromosomes even more
+                but we might reduce model accuracy. This is a question still to be answered. However, for the next week, I will be editing the code and making a few runs to get the weight of each featue at the feature selection step
+                to see wheather the weights are almost the same across all featues and that would explain why feature selection is selecting the first x features instead of selecting from the enite dataset. But if the weights across the features are different
+                then we might have to start looking at using a different library/tool other than scikit learn to do our feature selection. Because, I can confirm, everything after that step of training works fine and works how its supposed to </p></td>
+              <td><p>6 (July 30th) and 6 (August 6th)</p></td>
+            </tr>
+            
+            <tr>
               <td><p style="color:red" >Comming Soon!</p></td>
               <td><p style="color:red" >Comming Soon!</p></td>
             </tr>
